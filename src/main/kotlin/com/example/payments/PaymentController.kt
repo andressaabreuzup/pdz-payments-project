@@ -17,7 +17,7 @@ import java.util.*
 @RequestMapping("payment")
 class PaymentController(val repository: PaymentRepository) {
     ///debit-balance
-    val endpointPayments = "https://run.mocky.io/v3/5aade899-0865-43b8-9bd2-86b29ed34902"
+    val endpointPayments = "https://run.mocky.io/v3/5aade899-0865-43b8-9bd2-86b29ed349022"
 
     @PostMapping
     fun create(@RequestBody payment: Payment): ResponseEntity<String> {
